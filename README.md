@@ -26,7 +26,7 @@ The last layer is `repositories`, where the uses of external services and intera
 
 I didn't need to create my own Docker images, since my `Dockerfile` was very simple.
 
-**Language:** [go1.21.x](https://tip.golang.org/doc/go1.21)
+**Language:** [go1.21.5](https://tip.golang.org/doc/go1.21)
 
 <img src="https://i.imgur.com/3elNhQu.png" alt="">
 
@@ -40,20 +40,20 @@ I didn't need to create my own Docker images, since my `Dockerfile` was very sim
 ## Getting started
 
 ### Prerequisites
-- **[Git](https://github.com/gadielMa/trafilea)**
+- **[Git](https://github.com/gadielMa/trafileachallenge)**
 
 ### Steps
 
 ```sh
-$ git clone https://github.com/gadielMa/trafilea.git
+git clone https://github.com/gadielMa/trafileachallenge.git
 ```
 
 ```sh
-$ cd trafilea/
+cd trafileachallenge/
 ```
 
 ```sh
-$  go run cmd/main.go
+go run cmd/main.go
 ```
 
 Wait a minute and...
