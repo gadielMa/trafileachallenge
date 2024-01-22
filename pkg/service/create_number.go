@@ -7,12 +7,12 @@ import (
 )
 
 type CreateNumberService struct {
-	ReadCacheRepository   repository.ReadCacheRepository
-	UpdateCacheRepository repository.UpdateCacheRepository
+	ReadCacheRepository   ReadCacheRepository
+	UpdateCacheRepository UpdateCacheRepository
 }
 
-func NewCreateNumberService(readCacheRepository repository.ReadCacheRepository,
-	updateCacheRepository repository.UpdateCacheRepository) CreateNumberService {
+func NewCreateNumberService(readCacheRepository ReadCacheRepository,
+	updateCacheRepository UpdateCacheRepository) CreateNumberService {
 	return CreateNumberService{
 		ReadCacheRepository:   readCacheRepository,
 		UpdateCacheRepository: updateCacheRepository,

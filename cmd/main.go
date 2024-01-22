@@ -34,8 +34,8 @@ func run() error {
 
 	divisibleService := service.NewDivisibleService()
 	valueNumberService := service.NewValueNumberService()
-	createNumberService := service.NewCreateNumberService(readCacheRepository, updateCacheRepository)
-	getCollectionService := service.NewGetCollectionService(readCacheRepository)
+	createNumberService := service.NewCreateNumberService(&readCacheRepository, &updateCacheRepository)
+	getCollectionService := service.NewGetCollectionService(&readCacheRepository)
 
 	divisibleHandler := api.NewDivisibleHandler(&divisibleService).Handle
 	valueNumberHandler := api.NewValueNumberHandler(&valueNumberService).Handle

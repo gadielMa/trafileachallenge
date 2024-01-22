@@ -8,10 +8,10 @@ import (
 )
 
 type GetCollectionService struct {
-	ReadCacheRepository repository.ReadCacheRepository
+	ReadCacheRepository ReadCacheRepository
 }
 
-func NewGetCollectionService(readCacheRepository repository.ReadCacheRepository) GetCollectionService {
+func NewGetCollectionService(readCacheRepository ReadCacheRepository) GetCollectionService {
 	return GetCollectionService{
 		ReadCacheRepository: readCacheRepository,
 	}

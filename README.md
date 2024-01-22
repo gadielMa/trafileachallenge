@@ -10,7 +10,11 @@ which are multiples of both 3 and 5, print `Type 3`.
 
 ### Description
 
-70% of `unit tests` coverage.
+Use of `unit tests`
+
+```sh
+go test ./...
+```
 
 In this project I decided on a 3-layer scaffold.
 
@@ -57,5 +61,17 @@ Wait a minute and...
 Use a REST Client like [Postman](https://www.postman.com) to run the following curl:
 
 ```sh
-curl --location --request GET 'http://localhost:3000/trafilea/divisible'
+curl --location 'http://localhost:3000/trafilea/divisible'
+```
+
+```sh
+curl --location 'http://localhost:3000/trafilea/number?number=5'
+```
+
+```sh
+curl --location --request POST 'http://localhost:3000/trafilea/collection?collection=1&number=3'
+```
+
+```sh
+curl --location 'http://localhost:3000/trafilea/collection?collection=1'
 ```

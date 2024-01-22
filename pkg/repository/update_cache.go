@@ -14,6 +14,6 @@ func NewUpdateCacheRepository(cache CacheData) UpdateCacheRepository {
 	}
 }
 
-func (c *UpdateCacheRepository) Update(id string, product Collection) {
-	c.cacheData.Collection.Set(id, product, gocache.DefaultExpiration)
+func (c *UpdateCacheRepository) Update(id string, collection Collection) {
+	c.cacheData.Collection.Set(id, collection, gocache.DefaultExpiration)
 }
